@@ -1,4 +1,4 @@
-# revision 24275
+# revision 24736
 # category Package
 # catalog-ctan /macros/latex/contrib/sidenotes
 # catalog-date 2011-10-12 17:03:26 +0200
@@ -6,7 +6,7 @@
 # catalog-version 0.53
 Name:		texlive-sidenotes
 Version:	0.53
-Release:	1
+Release:	2
 Summary:	Typeset notes containing rich content, in the margin
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/sidenotes
@@ -18,9 +18,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
-Conflicts:	texlive-source <= 20110705-3
 
 %description
 The package allows typesetting of texts with notes, figures,
@@ -28,19 +25,19 @@ citations, captions and tables in the margin. This is common
 (for example) in science text books.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -48,6 +45,8 @@ citations, captions and tables in the margin. This is common
 %{_texmfdistdir}/tex/latex/sidenotes/sidenotes.sty
 %doc %{_texmfdistdir}/doc/latex/sidenotes/README
 %doc %{_texmfdistdir}/doc/latex/sidenotes/sidenotes.pdf
+%doc %{_texmfdistdir}/doc/latex/sidenotes/sn_usage_biblatex.pdf
+%doc %{_texmfdistdir}/doc/latex/sidenotes/sn_usage_biblatex.tex
 #- source
 %doc %{_texmfdistdir}/source/latex/sidenotes/sidenotes.dtx
 %doc %{_texmfdistdir}/source/latex/sidenotes/sidenotes.ins
