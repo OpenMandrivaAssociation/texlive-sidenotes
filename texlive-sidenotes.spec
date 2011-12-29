@@ -24,16 +24,8 @@ The package allows typesetting of texts with notes, figures,
 citations, captions and tables in the margin. This is common
 (for example) in science text books.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -50,7 +42,6 @@ citations, captions and tables in the margin. This is common
 #- source
 %doc %{_texmfdistdir}/source/latex/sidenotes/sidenotes.dtx
 %doc %{_texmfdistdir}/source/latex/sidenotes/sidenotes.ins
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -61,5 +52,3 @@ citations, captions and tables in the margin. This is common
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
