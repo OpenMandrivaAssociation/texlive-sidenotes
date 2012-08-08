@@ -1,16 +1,16 @@
-# revision 24736
+# revision 26610
 # category Package
-# catalog-ctan /macros/latex/contrib/sidenotes
-# catalog-date 2011-10-12 17:03:26 +0200
-# catalog-license lppl1.3
-# catalog-version 0.53
+# catalog-ctan undef
+# catalog-date undef
+# catalog-license undef
+# catalog-version undef
 Name:		texlive-sidenotes
-Version:	0.53
-Release:	3
-Summary:	Typeset notes containing rich content, in the margin
+Version:	20120808
+Release:	1
+Summary:	TeXLive sidenotes package
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/sidenotes
-License:	LPPL1.3
+URL:		http://tug.org/texlive
+License:	http://www.tug.org/texlive/LICENSE.TL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sidenotes.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sidenotes.doc.tar.xz
 Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sidenotes.source.tar.xz
@@ -20,9 +20,7 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-The package allows typesetting of texts with notes, figures,
-citations, captions and tables in the margin. This is common
-(for example) in science text books.
+TeXLive sidenotes package.
 
 %post
     %{_sbindir}/texlive.post
@@ -37,8 +35,11 @@ citations, captions and tables in the margin. This is common
 %{_texmfdistdir}/tex/latex/sidenotes/sidenotes.sty
 %doc %{_texmfdistdir}/doc/latex/sidenotes/README
 %doc %{_texmfdistdir}/doc/latex/sidenotes/sidenotes.pdf
+%doc %{_texmfdistdir}/doc/latex/sidenotes/sn.bib
 %doc %{_texmfdistdir}/doc/latex/sidenotes/sn_usage_biblatex.pdf
 %doc %{_texmfdistdir}/doc/latex/sidenotes/sn_usage_biblatex.tex
+%doc %{_texmfdistdir}/doc/latex/sidenotes/sn_usage_bibtex.pdf
+%doc %{_texmfdistdir}/doc/latex/sidenotes/sn_usage_bibtex.tex
 #- source
 %doc %{_texmfdistdir}/source/latex/sidenotes/sidenotes.dtx
 %doc %{_texmfdistdir}/source/latex/sidenotes/sidenotes.ins
