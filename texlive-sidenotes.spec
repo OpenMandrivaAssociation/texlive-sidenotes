@@ -53,3 +53,24 @@ TeXLive sidenotes package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120808-1
++ Revision: 812841
+- Update to latest release.
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.53-3
++ Revision: 756023
+- Rebuild to reduce used resources
+
+* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.53-2
++ Revision: 739874
+- texlive-sidenotes
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.53-1
++ Revision: 719533
+- texlive-sidenotes
+- texlive-sidenotes
+- texlive-sidenotes
+
