@@ -1,16 +1,17 @@
-# revision 26610
+# revision 28239
 # category Package
-# catalog-ctan undef
-# catalog-date undef
-# catalog-license undef
-# catalog-version undef
+# catalog-ctan /macros/latex/contrib/sidenotes
+# catalog-date 2012-11-11 13:12:37 +0100
+# catalog-license lppl1.3
+# catalog-version 0.92
 Name:		texlive-sidenotes
-Version:	20120808
+Epoch:		1
+Version:	0.92
 Release:	1
-Summary:	TeXLive sidenotes package
+Summary:	Typeset notes containing rich content, in the margin
 Group:		Publishing
-URL:		http://tug.org/texlive
-License:	http://www.tug.org/texlive/LICENSE.TL
+URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/sidenotes
+License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sidenotes.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sidenotes.doc.tar.xz
 Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sidenotes.source.tar.xz
@@ -20,7 +21,9 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-TeXLive sidenotes package.
+The package allows typesetting of texts with notes, figures,
+citations, captions and tables in the margin. This is common
+(for example) in science text books.
 
 %post
     %{_sbindir}/texlive.post
@@ -35,11 +38,6 @@ TeXLive sidenotes package.
 %{_texmfdistdir}/tex/latex/sidenotes/sidenotes.sty
 %doc %{_texmfdistdir}/doc/latex/sidenotes/README
 %doc %{_texmfdistdir}/doc/latex/sidenotes/sidenotes.pdf
-%doc %{_texmfdistdir}/doc/latex/sidenotes/sn.bib
-%doc %{_texmfdistdir}/doc/latex/sidenotes/sn_usage_biblatex.pdf
-%doc %{_texmfdistdir}/doc/latex/sidenotes/sn_usage_biblatex.tex
-%doc %{_texmfdistdir}/doc/latex/sidenotes/sn_usage_bibtex.pdf
-%doc %{_texmfdistdir}/doc/latex/sidenotes/sn_usage_bibtex.tex
 #- source
 %doc %{_texmfdistdir}/source/latex/sidenotes/sidenotes.dtx
 %doc %{_texmfdistdir}/source/latex/sidenotes/sidenotes.ins
@@ -53,24 +51,3 @@ TeXLive sidenotes package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120808-1
-+ Revision: 812841
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.53-3
-+ Revision: 756023
-- Rebuild to reduce used resources
-
-* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.53-2
-+ Revision: 739874
-- texlive-sidenotes
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.53-1
-+ Revision: 719533
-- texlive-sidenotes
-- texlive-sidenotes
-- texlive-sidenotes
-
