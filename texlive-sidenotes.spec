@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-sidenotes
 Version:	20120808
-Release:	1
+Release:	2
 Summary:	TeXLive sidenotes package
 Group:		Publishing
 URL:		http://tug.org/texlive
