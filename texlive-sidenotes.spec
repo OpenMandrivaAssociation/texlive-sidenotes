@@ -1,13 +1,13 @@
-# revision 28239
+# revision 32439
 # category Package
 # catalog-ctan /macros/latex/contrib/sidenotes
-# catalog-date 2012-11-11 13:12:37 +0100
+# catalog-date 2013-12-18 13:10:23 +0100
 # catalog-license lppl1.3
-# catalog-version 0.92
+# catalog-version 0.93
 Name:		texlive-sidenotes
 Epoch:		1
-Version:	0.92
-Release:	5
+Version:	0.93
+Release:	1
 Summary:	Typeset notes containing rich content, in the margin
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/sidenotes
@@ -35,8 +35,11 @@ citations, captions and tables in the margin. This is common
 
 #-----------------------------------------------------------------------
 %files
+%{_texmfdistdir}/tex/latex/sidenotes/caesar_book.cls
 %{_texmfdistdir}/tex/latex/sidenotes/sidenotes.sty
 %doc %{_texmfdistdir}/doc/latex/sidenotes/README
+%doc %{_texmfdistdir}/doc/latex/sidenotes/caesar_example.pdf
+%doc %{_texmfdistdir}/doc/latex/sidenotes/caesar_example.tex
 %doc %{_texmfdistdir}/doc/latex/sidenotes/sidenotes.pdf
 #- source
 %doc %{_texmfdistdir}/source/latex/sidenotes/sidenotes.dtx
