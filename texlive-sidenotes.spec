@@ -1,12 +1,12 @@
-# revision 32439
+# revision 32970
 # category Package
 # catalog-ctan /macros/latex/contrib/sidenotes
-# catalog-date 2013-12-18 13:10:23 +0100
+# catalog-date 2014-02-14 10:39:07 +0100
 # catalog-license lppl1.3
-# catalog-version 0.93
+# catalog-version 0.96a
 Name:		texlive-sidenotes
 Epoch:		1
-Version:	0.93
+Version:	0.96a
 Release:	1
 Summary:	Typeset notes containing rich content, in the margin
 Group:		Publishing
