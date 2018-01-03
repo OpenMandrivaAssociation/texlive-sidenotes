@@ -1,9 +1,3 @@
-# revision 32970
-# category Package
-# catalog-ctan /macros/latex/contrib/sidenotes
-# catalog-date 2014-02-14 10:39:07 +0100
-# catalog-license lppl1.3
-# catalog-version 0.96a
 Name:		texlive-sidenotes
 Epoch:		1
 Version:	1.00
@@ -35,15 +29,10 @@ citations, captions and tables in the margin. This is common
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/sidenotes/caesar_book.cls
-%{_texmfdistdir}/tex/latex/sidenotes/sidenotes.sty
-%doc %{_texmfdistdir}/doc/latex/sidenotes/README
-%doc %{_texmfdistdir}/doc/latex/sidenotes/caesar_example.pdf
-%doc %{_texmfdistdir}/doc/latex/sidenotes/caesar_example.tex
-%doc %{_texmfdistdir}/doc/latex/sidenotes/sidenotes.pdf
+%{_texmfdistdir}/tex/latex/sidenotes
+%doc %{_texmfdistdir}/doc/latex/sidenotes
 #- source
-%doc %{_texmfdistdir}/source/latex/sidenotes/sidenotes.dtx
-%doc %{_texmfdistdir}/source/latex/sidenotes/sidenotes.ins
+%doc %{_texmfdistdir}/source/latex/sidenotes
 
 #-----------------------------------------------------------------------
 %prep
