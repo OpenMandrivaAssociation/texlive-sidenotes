@@ -1,7 +1,7 @@
 Name:		texlive-sidenotes
 Epoch:		1
 Version:	54524
-Release:	1
+Release:	2
 Summary:	Typeset notes containing rich content, in the margin
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/sidenotes
