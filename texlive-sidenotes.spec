@@ -4,7 +4,7 @@ Version:	54524
 Release:	2
 Summary:	Typeset notes containing rich content, in the margin
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/sidenotes
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/sidenotes
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sidenotes.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sidenotes.doc.r%{version}.tar.xz
